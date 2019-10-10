@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="imputNumber">
+    <button type="button" onclick="display()">Tinh</button>
+    <p id="display"></p>
+</form>
+<script>
+    function tinh(n) {
+        var x ;
+        x = n*n ;
+        return x ;
+    }
+    function display() {
+        n = Number(document.getElementById("imputNumber").value);
+        document.getElementById("display").innerHTML = tinh(n);
+    }
+</script>
+</body>
+</html>

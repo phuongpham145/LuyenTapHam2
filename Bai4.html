@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    Enter Data :
+    <input type="text" id="inputFile">
+    <button type="button" onclick="kiemtra()">Kiemtra</button>
+    <p id="display"></p>
+</form>
+<script>
+     function kiemtra() {
+
+         var input = document.getElementById('inputFile').value;
+         if (isNaN(input)) {
+//cai nay la neu input nhap vao khong phai la so
+             document.getElementById("display").innerHTML = "False";
+         } else {
+//neu nhap vao la so, cho phep submit
+             document.getElementById("display").innerHTML = "True";
+         }
+     }
+</script>
+</body>
+</html>
